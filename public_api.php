@@ -13,4 +13,4 @@ $response = [
     "github_url" => $github_url
 ];
 
-echo json_encode($response, JSON_PRETTY_PRINT);
+echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
